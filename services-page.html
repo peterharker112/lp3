@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - White Pet Care</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #4A90E2;
+            --secondary-color: #F5A623;
+            --text-color: #333333;
+            --light-bg: #F8F9FA;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: var(--text-color);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .navbar-brand {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--primary-color) !important;
+        }
+
+        .service-detail {
+            padding: 30px;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .service-detail:hover {
+            transform: translateY(-5px);
+        }
+
+        .service-icon {
+            font-size: 3rem;
+            color: var(--primary-color);
+            margin-bottom: 20px;
+        }
+
+        .price-tag {
+            background-color: var(--secondary-color);
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            display: inline-block;
+            margin-top: 10px;
+        }
+
+        .footer {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 20px 0;
+            margin-top: auto;
+        }
+
+        .social-icons a {
+            color: white;
+            margin: 0 10px;
+            font-size: 1.5rem;
+            transition: color 0.3s ease;
+        }
+
+        .social-icons a:hover {
+            color: var(--secondary-color);
+        }
+    </style>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <div class="container">
+            <img class="logo-pet" src="./assets/images/logo-pet.png" alt="">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link " href="index.php">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about-page.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="services-page.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact-page.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="bg-light py-5">
+        <div class="container">
+            <h1 class="display-4">Our Services</h1>
+            <p class="lead">White Pet Care, is here to offer you expert and personalized service depending on your furry friend’s requirements. From dog haircuts and nail trims tailored to your pets breed to dog walking with GPS & photo sharing, we make your pet look and feel their best. Our canine classes include obedience training to behaviour modification, and we offer groups or private classes. If you want to take a vacation, our dog boarding facility is safe, climate-controlled, 24/7 supervised and daily exercised. Leave it to White Pet Care to treat your dog like his or her own.</p>
+        </div>
+    </header>
+
+    <!-- Services Section -->
+    <section class="services-page py-5">
+        <div class="container">
+            <div class="row">
+                <!-- Grooming Service -->
+                <div class="col-lg-6">
+                    <div class="service-detail bg-light">
+                        <i class="fas fa-cut service-icon"></i>
+                        <h3>Professional Grooming</h3>
+                        <p class="lead">Complete grooming services for all breeds</p>
+                        <ul class="list-unstyled">
+                            <li><i class="fas fa-check text-success me-2"></i>Bath and blow dry</li>
+                            <li><i class="fas fa-check text-success me-2"></i>Breed-specific haircuts</li>
+                            <li><i class="fas fa-check text-success me-2"></i>Nail trimming and filing</li>
+                            <li><i class="fas fa-check text-success me-2"></i>Ear cleaning</li>
+                            <li><i class="fas fa-check text-success me-2"></i>Teeth brushing</li>
+                        </ul>
+                        <div class="price-tag">Starting from $45</div>
+                        <!-- <a href="contact.html" class="btn btn-primary mt-3">Book Now</a> -->
+                    </div>
+                </div>
+
+                <!-- Dog Walking -->
+                <div class="col-lg-6">
+                    <div class="service-detail bg-light">
+                        <i class="fas fa-walking service-icon"></i>
+                        <h3>Dog Walking</h3>
+                        <p class="lead">Personalized walking services</p>
+                        <ul class="list-unstyled">
+                            <li><i class="fas fa-check text-success me-2"></i>Individual walks</li>
+                            <li><i class="fas fa-check text-success me-2"></i>Group walks</li>
+                            <li><i class="fas fa-check text-success me-2"></i>GPS tracking</li>
+                            <li><i class="fas fa-check text-success me-2"></i>Photo updates</li>
+                            <li><i class="fas fa-check text-success me-2"></i>Flexible scheduling</li>
+                        </ul>
+                        <div class="price-tag">From $20 per 30 min</div>
+                        <!-- <a href="contact.html" class="btn btn-primary mt-3">Book Now</a> -->
+                    </div>
+                </div>
+
+                <!-- Training -->
+                <div class="col-lg-6">
+                    <div class="service-detail bg-light">
+                        <i class="fas fa-graduation-cap service-icon"></i>
+                        <h3>Dog Training</h3>
+                        <p class="lead">Professional training programs</p>
+                        <ul class="list-unstyled">
+                            <li><i class="fas fa-check text-success me-2"></i>Basic obedience training</li>
+                            <li><i class="fas fa-check text-success me-2"></i>Behavior modification</li>
+                            <li><i class="fas fa-check text-success me-2"></i>Puppy training</li>
+                            <li><i class="fas fa-check text-success me-2"></i>Group classes</li>
+                            <li><i class="fas fa-check text-success me-2"></i>Private sessions</li>
+                        </ul>
+                        <div class="price-tag">From $75 per session</div>
+                        <!-- <a href="contact.html" class="btn btn-primary mt-3">Book Now</a> -->
+                    </div>
+                </div>
+
+                <!-- Boarding -->
+                <div class="col-lg-6">
+                    <div class="service-detail bg-light">
+                        <i class="fas fa-home service-icon"></i>
+                        <h3>Dog Boarding</h3>
+                        <p class="lead">Comfortable overnight care</p>
+                        <ul class="list-unstyled">
+                            <li><i class="fas fa-check text-success me-2"></i>24/7 supervision</li>
+                            <li><i class="fas fa-check text-success me-2"></i>Climate-controlled facility</li>
+                            <li><i class="fas fa-check text-success me-2"></i>Daily exercise</li>
+                            <li><i class="fas fa-check text-success me-2"></i>Medication administration</li>
+                            <li><i class="fas fa-check text-success me-2"></i>Regular updates</li>
+                        </ul>
+                        <div class="price-tag">From $45 per night</div>
+                        <!-- <a href="contact.html" class="btn btn-primary mt-3">Book Now</a> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   <!-- Footer -->
+   <footer class="footer bg-dark text-white py-4">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+          <p class="mb-0">
+            &copy; 2025 White Pet Care. All rights reserved.
+            <a
+              href="privacy-policy.html"
+              class="text-decoration-none text-white-50"
+              >Privacy Policy</a
+            >
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
