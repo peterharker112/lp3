@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - White Pet Care</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #4A90E2;
+            --secondary-color: #F5A623;
+            --text-color: #333333;
+            --light-bg: #F8F9FA;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: var(--text-color);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .navbar-brand {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--primary-color) !important;
+        }
+
+        .team-member {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .team-member img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            margin-bottom: 1rem;
+            object-fit: cover;
+        }
+
+        .milestone-card {
+            background-color: var(--light-bg);
+            padding: 2rem;
+            border-radius: 10px;
+            text-align: center;
+            margin-bottom: 1rem;
+            transition: transform 0.3s ease;
+        }
+
+        .milestone-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .milestone-number {
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            font-weight: bold;
+        }
+
+        .value-card {
+            padding: 1.5rem;
+            border-radius: 10px;
+            margin-bottom: 1rem;
+            background-color: white;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .value-icon {
+            font-size: 2rem;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+
+        .footer {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 20px 0;
+            margin-top: auto;
+        }
+
+        .social-icons a {
+            color: white;
+            margin: 0 10px;
+            font-size: 1.5rem;
+            transition: color 0.3s ease;
+        }
+
+        .social-icons a:hover {
+            color: var(--secondary-color);
+        }
+    </style>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <div class="container">
+            <img class="logo-pet" src="./assets/images/logo-pet.png" alt="">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.php">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="about-page.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services-page.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact-page.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+<!-- Hero Section -->
+<header class="bg-light py-5">
+    <div class="container">
+        <div class="row justify-content-center">
+            <!-- Text Content -->
+            <div class="col-lg-8 text-lg-start text-center">
+                <h1 class="display-4 mt-2">Our Story</h1>
+                <p class="lead mt-4">
+                    Since 2015, White Pet Care has been delivering quality pet care with love and care. It began as a modest, unassuming project dedicated to making animals happy and healthy, and today it is the name pet owners know. Grooming, training, walking, and boarding services are just a few of the many ways we’ve developed to meet the different needs of pets and families over the years.
+                </p>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+
+    <!-- Our Mission Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h2 class="mb-4">Our Mission</h2>
+                    <p class="lead">To serve pets at the highest level and offer owners peace of mind by offering professional, loving, and honest care. </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Values Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Our Core Values</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="value-card">
+                        <i class="fas fa-heart value-icon"></i>
+                        <h4>Compassion</h4>
+                        <p>We treat all of our pets like we were their own, taking care of them as they were our own.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="value-card">
+                        <i class="fas fa-certificate value-icon"></i>
+                        <h4>Excellence</h4>
+                        <p>We ensure the very best in professional pet care with regular training and certification.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="value-card">
+                        <i class="fas fa-shield-alt value-icon"></i>
+                        <h4>Safety</h4>
+                        <p>Your pets’ safety and health is our number one concern at all times.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Milestones Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Our Milestones</h2>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="milestone-card">
+                        <div class="milestone-number">5000+</div>
+                        <p>Happy Clients</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="milestone-card">
+                        <div class="milestone-number">10</div>
+                        <p>Years Experience</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="milestone-card">
+                        <div class="milestone-number">15</div>
+                        <p>Team Members</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="milestone-card">
+                        <div class="milestone-number">4.9</div>
+                        <p>Average Rating</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Our Certifications</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <p class="mb-4">We're proud to be certified by leading organizations in white Pet Care:</p>
+                    <div class="row">
+                        <div class="col-md-4 mb-4">
+                            <!-- <img src="/api/placeholder/150/150" alt="Certification 1" class="img-fluid"> -->
+                            <p class="mt-2">Professional Pet Groomers</p>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <!-- <img src="/api/placeholder/150/150" alt="Certification 2" class="img-fluid"> -->
+                            <p class="mt-2">Certified Dog Trainers</p>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <!-- <img src="/api/placeholder/150/150" alt="Certification 3" class="img-fluid"> -->
+                            <p class="mt-2">Pet First Aid Certified</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   <!-- Footer -->
+   <footer class="footer bg-dark text-white py-4">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+          <p class="mb-0">
+            &copy; 2025 White Pet Care. All rights reserved.
+            <a
+              href="privacy-policy.html"
+              class="text-decoration-none text-white-50"
+              >Privacy Policy</a
+            >
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
